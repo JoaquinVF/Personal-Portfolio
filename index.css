@@ -27,15 +27,37 @@ body{
 header{
     display: none;
 }
+.selector{
+    display: flex;
+    width: 55px;
+    background-color: white;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    border: 1px solid black;
+    border-radius: 200px;
+}
+.inside{
+    width: 25px;
+    background-color: black;
+    height: 25px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    border: 1px solid black;
+    border-radius: 200px;
+}
 button{
-    width: 35px;
+    width: 40px;
     height: 25px;
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 13px;
     background-color: #f7f7f7;
     border: none;
     opacity: 0.7;
+    text-align: center;
 }
 nav{
 }
