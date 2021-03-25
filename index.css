@@ -30,7 +30,7 @@ header{
 .selector{
     display: flex;
     width: 55px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.301);
     height: 25px;
     position: absolute;
     left: 20px;
@@ -40,7 +40,7 @@ header{
 }
 .inside{
     width: 25px;
-    background-color: black;
+    background-color: rgb(189, 189, 189);
     height: 25px;
     position: absolute;
     left: -1px;
