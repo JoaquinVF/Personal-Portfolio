@@ -32,7 +32,7 @@ header{
   display: block;
   position: absolute;
   top: 8px;
-  right: 5px;
+  right: 0px;
   z-index: 2;
   -webkit-user-select: none;
   user-select: none;
@@ -55,8 +55,8 @@ header{
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: -5px;
+  right: -3px;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -116,17 +116,17 @@ header{
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 180px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  right: -120px;
+  right: 0px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
   transform-origin: 0% 0%;
-  transform: translate(100%, 0%);
+  transform: translate(120%, 0%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 #menu li
