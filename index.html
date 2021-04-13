@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/Index/index.css">
     <title>Joaquín Villanueva | Portfolio</title>
 </head>
 <body>
@@ -34,10 +34,14 @@
     <div class="projects-container">
       <h2>Projects</h2>
       <div class="sub"></div>
-      <aside class="aside-container">
-        <div class="page1-container"><a href="https://angry-kare-fc99ec.netlify.app/">My first web page</a><img src="./imgs/icons8-circle-50.png" href="https://angry-kare-fc99ec.netlify.app/" alt=""></div>
-        <div class="page2-container"><a href="https://quizzical-noyce-152f42.netlify.app/">Chat app Presentation</a></div>
-      </aside>
+      <div class="accordion">
+        <input type="radio" name="select" class="accordion-select" checked />
+       <div class="accordion-title"><span>My first web page</span></div>
+       <div class="accordion-content">Content</div> 
+            <input type="radio" name="select" class="accordion-select" />
+       <div class="accordion-title"><span>Title</span></div>
+       <div class="accordion-content">Content</div> 
+      </div> 
     </div>
   </main>
   <!-- <footer>
