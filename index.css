@@ -127,7 +127,7 @@ h1{
     font-weight: bolder;
     z-index: 1;
 }
-.logos-container{
+.inner-container{
     position: relative;
     display: grid;
     place-items: center;
@@ -241,6 +241,7 @@ h1{
 } 
 .accordion-select:hover + .accordion-title,
 .accordion-select:checked + .accordion-title {
+  transition: 0.3s ease;
   background-color: #ffff01;
 } 
 .accordion-title span  {	
@@ -271,3 +272,15 @@ h1{
     justify-content: center;
     word-spacing: 40px;
 } */
+
+@media screen and (min-width: 768px) {
+  .inner-container{
+    padding: 0 40%;
+  }
+  .logos-container{
+    padding: 0 ;
+  }
+  .projects-container{
+    padding: 0 25%;
+  }
+}
