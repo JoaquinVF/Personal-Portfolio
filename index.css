@@ -281,6 +281,9 @@ h1{
 .media img{
   max-width: 50px;
 }
+.media img:hover{
+  transform:scale(1.1);
+}
 footer .media .social_linkedin{
   width: 50px;
 }
