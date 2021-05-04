@@ -214,7 +214,6 @@ h1{
   margin-bottom: 0;
   margin-right: 0;
 }
-/* Generated styles starts here */
 .accordion {
   border-color: #ffffff;
   border-radius: 6px;
@@ -262,17 +261,29 @@ h1{
   padding: 0px;
   width: 100%;
 } 
-/* .media{
-    display: block;
+.about-container{
+  font-size: 18px;
+  margin:30px 20px;
+  text-align: center;
+  font-weight: 900;
+}
+.media{
+    display: flex;
     position: relative;
-    bottom: 0px;
-    background-color: fffdfdc7;
+    top: 100px;
+    background-color: #fffdfdc7;
+    border: 1px solid rgba(0, 0, 0, 0.212);
     height: 66px;
     align-items: center;
     justify-content: center;
     word-spacing: 40px;
-} */
-
+}
+.media img{
+  max-width: 50px;
+}
+footer .media .social_linkedin{
+  width: 50px;
+}
 @media screen and (min-width: 768px) {
   .inner-container{
     padding: 0 40%;
