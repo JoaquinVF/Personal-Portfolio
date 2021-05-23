@@ -25,8 +25,26 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-header{
-    display: none;
+nav{
+  position: absolute;
+}
+.language{
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+}
+.language img:hover{
+  transition: all 0.3s;
+  transform: translateY(1.5px);
+}
+#esp{
+  display: none;
+}
+nav img{
+  margin-right: 7px;
+  height: 30px;
 }
 #menuToggle{
   display: block;
@@ -299,5 +317,8 @@ footer .media .social_linkedin{
   }
   .projects-container{
     padding: 0 25%;
+  }
+  .language{
+    right: 10px;
   }
 }
