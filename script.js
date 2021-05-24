@@ -1,12 +1,12 @@
-let español = document.getElementById('esp');
-let ingles = document.getElementById('eng');
+let textoEspañol = document.getElementById('esp');
+let textoIngles = document.getElementById('eng');
 
 function langEs(){
-    ingles.style.display = "none";
-    español.style.display = "block";
+    textoIngles.style.display = "none";
+    textoEspañol.style.display = "block";
 }
 
 function langEn(){
-    ingles.style.display = "block";
-    español.style.display = "none";
+    textoIngles.style.display = "block";
+    textoEspañol.style.display = "none";
 }
