@@ -100,7 +100,7 @@ h1{
     height: 120px;
 }
 .logos-container h2{
-    grid-column: 1/4;
+    grid-column: 2/4;
     grid-row: 1/2;
     top: 10px;
     font-weight: 100;
@@ -109,13 +109,15 @@ h1{
     width: 50px;
     grid-row: 2/3;
     top: 100px;
-    background-color: #f7f7f7;
+
 }
 .logos-container img:hover{
   transition: all 0.3s;
   transform: scale(1.03);
 }
-
+.logo{
+  background-color: #f7f7f7;
+}
 
 .projects-container{
   position: relative;
@@ -143,26 +145,28 @@ h1{
   text-align: center;
   font-weight: 900;
 }
+footer{
+  display: flex;
+  position: relative;
+  top: 100px;
+  background-color: #fffdfdc7;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  height: 66px;
+  align-items: center;
+  justify-content: center;
+  word-spacing: 40px;
+}
 .media{
-    display: flex;
-    position: relative;
-    top: 100px;
-    background-color: #fffdfdc7;
-    border: 1px solid rgba(0, 0, 0, 0.212);
-    height: 66px;
-    align-items: center;
-    justify-content: space-evenly;
-    word-spacing: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .media img{
-  max-width: 50px;
+  width: 50px;
 }
 .media img:hover{
   transition: all 0.2s;
   transform: scale(1.1) translateY(-1.5px);
-}
-footer .media .social_linkedin{
-  width: 50px;
 }
 .img-container{
   position: relative;
@@ -194,6 +198,10 @@ footer .media .social_linkedin{
   margin-bottom: 10px;
   border-radius: 8px 8px 0 0;
 }
+.img-container .projects-box:hover{
+  transition: all 0.3s;
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 8px 0px, rgb(0 0 0 / 12%) 0px 5px 3px -2px, rgb(0 0 0 / 14%) 3px 3px 4px 0px;
+}
 .projects-box:hover > img{
   transition: all 0.4s;
   filter: grayscale(0);
@@ -217,6 +225,7 @@ footer .media .social_linkedin{
   border-radius: 100%;
   width: 25px;
   height: 25px;
+  text-align: center;
 }
 
 
@@ -229,12 +238,15 @@ footer .media .social_linkedin{
     padding: 0 ;
   }
   .projects-container{
-    padding: 0 25%;
     text-align: center;
     justify-content: center;
   }
+  .projects-h2{
+    font-size: 2rem;
+  }
   .projects-container .sub{
     margin: auto;
+    width: 120px;
   }
   .language{
     right: 10px;
@@ -254,7 +266,9 @@ footer .media .social_linkedin{
     font-size: 1.4rem;
   }
   .img-container{
+    width: 100%;
     flex-direction: row;
+    justify-content: space-evenly;
   }
   .img-container img{
     filter:  grayscale(1) blur(2px);
@@ -262,11 +276,11 @@ footer .media .social_linkedin{
   .projects-box:hover > img{
     filter: grayscale(0);
   }
-  .projects-box{
-    margin-left: 20px;
-  }
   .line{
     width: 100%;
     height: 3px;
+  }
+  footer .media{
+    width: 40%;
   }
 }
