@@ -93,7 +93,7 @@ h1{
     position: relative;
     display: grid;
     place-items: center;
-    color: #f7f7f7;
+    color: #ffffff;
     top: 40px;
     background-color: #000000;
     width: 100%;
@@ -116,7 +116,7 @@ h1{
   transform: scale(1.03);
 }
 .logo{
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 
 .projects-container{
