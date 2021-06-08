@@ -114,28 +114,16 @@ h1{
   background-color: #ffffff;
 }
 
-.projects-container{
+.container{
   position: relative;
   place-content: center;
   top: 1.5rem;
   left: 0px;
 }
-.projects-container h2{
+.container h2{
   position: relative;
   bottom: 0px;
   z-index: 1;
-}
-.projects-h2{
-  margin: 20px 0 20px 5px;
-}
-.projects-container .sub{
-  height: 11px;
-  margin: 0;
-  position: relative;
-  top: -35px;
-  z-index: 0;
-  width: 100px;
-  background-color: rgb(255, 255, 1);
 }
 .about-container{
   font-size: 1.2rem;
@@ -143,38 +131,45 @@ h1{
   text-align: center;
   font-weight: 900;
 }
-footer{
+
+.projects-title__inner-container{
   display: flex;
-  position: relative;
-  top: 100px;
-  background-color: #fffdfdc7;
-  border: 1px solid rgba(0, 0, 0, 0.212);
-  height: 66px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  word-spacing: 40px;
+  margin: 50px 0 30px 5px;
 }
-.media{
-  width: 70%;
-  display: flex;
-  justify-content: space-evenly;
+.order{
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow:  1px 1px 2px 1.5px rgb(0 0 0 / 45%);
+  cursor: pointer;
+  border-radius: 5px;
 }
-.media img{
-  width: 50px;
+.order:active{
+  box-shadow:  1px 1px 2px 1px rgb(0 0 0 / 35%) inset;
 }
-.media img:hover{
-  transition: all 0.2s;
-  transform: scale(1.1) translateY(-1.5px);
+.container .sub{
+  height: 11px;
+  margin: 0;
+  position: relative;
+  top: -15px;
+  z-index: 0;
+  width: 100px;
+  background-color: rgb(255, 255, 1);
 }
-.img-container{
+
+
+
+.projects-container{
   position: relative;
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
-.img-container .projects-box{
+.projects-container .projects-box{
   width: 280px;
   min-height: 268px;
   border-radius: 8px;
@@ -188,10 +183,10 @@ footer{
   margin-bottom: 30px;
   box-shadow: rgb(0 0 0 / 20%) 0px 1px 8px 0px, rgb(0 0 0 / 12%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px;
 }
-.img-container .projects-box p{
+.projects-container .projects-box p{
   margin: 10px;
 }
-.img-container img{
+.projects-container img{
   width: 100%;
   height: 100px;
   object-fit: cover;
@@ -199,7 +194,7 @@ footer{
   margin-bottom: 10px;
   border-radius: 8px 8px 0 0;
 }
-.img-container .projects-box:hover{
+.projects-container .projects-box:hover{
   transition: all 0.3s;
   box-shadow: rgb(0 0 0 / 20%) 0px 8px 8px 0px, rgb(0 0 0 / 12%) 0px 5px 3px -2px, rgb(0 0 0 / 14%) 3px 3px 4px 0px;
 }
@@ -228,6 +223,30 @@ footer{
 }
 
 
+footer{
+  display: flex;
+  position: relative;
+  top: 100px;
+  background-color: #fffdfdc7;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  height: 66px;
+  align-items: center;
+  justify-content: center;
+  word-spacing: 40px;
+}
+.media{
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.media img{
+  width: 50px;
+}
+.media img:hover{
+  transition: all 0.2s;
+  transform: scale(1.1) translateY(-1.5px);
+}
+
 
 @media screen and (min-width: 768px) {
   .inner-container{
@@ -236,7 +255,7 @@ footer{
   .logos-container{
     padding: 0 ;
   }
-  .projects-container{
+  .container{
     text-align: center;
     justify-content: center;
   }
@@ -244,7 +263,7 @@ footer{
     font-size: 2rem;
     margin-left: 0px;
   }
-  .projects-container .sub{
+  .container .sub{
     margin: auto;
     width: 120px;
   }
@@ -262,16 +281,25 @@ footer{
     top: -20px;
     width: 440px;
   }
-  .projects-container
+  .container
   .about-container p{
     font-size: 1.4rem;
   }
-  .img-container{
+  .projects-title-container{
     width: 100%;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+  .projects-title__inner-container{
+    width: 20%;
     justify-content: space-evenly;
   }
-  .img-container img{
+  .projects-container{
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .projects-container img{
     filter:  grayscale(1) blur(2px);
   }
   .projects-box:hover > img{

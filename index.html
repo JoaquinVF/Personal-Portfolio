@@ -35,7 +35,7 @@
         <img src="./imgs/icons8-octocat.svg" alt="">
       </div>
     </div>
-    <div class="projects-container">
+    <div class="container">
       <div class="about-container">
         <p class="text eng">
           Hi! <br>
@@ -56,10 +56,17 @@
         </p>
       </div>
 
-      <h2 class="projects-h2 eng">Projects</h2>
-      <h2 class="projects-h2 esp">Proyectos</h2>
-      <div class="sub"></div>
-      <div class="img-container">
+      <div class="projects-title-container">      
+        <div class="projects-title__inner-container">
+        <div>
+          <h2 class="projects-h2 eng">Projects</h2>
+          <h2 class="projects-h2 esp">Proyectos</h2>
+          <div class="sub"></div>
+        </div>
+        <button class="order" id="orderText">Filter: Z - A</button>
+      </div>
+    </div>
+      <div class="projects-container" id="projects-container">
         <div class="line"></div>
         <a href="https://angry-kare-fc99ec.netlify.app/">
           <div class="projects-box">
@@ -100,6 +107,16 @@
             <h5>HTML, CSS & JS</h5>
             <p class="eng">Ecommerce, work in progress.</p>
             <p class="esp">Comercio virtual, trabajo en progreso.</p>
+            <div class="arrow">&#10095;</div>
+          </div>
+        </a>
+        <a href="https://dreamy-lumiere-94e763.netlify.app/">
+          <div class="projects-box">
+            <img src="imgs/screenshots/Captura de pantalla 2021-06-08 - 13.48.02.png" alt="">
+            <h2>Calculator</h2>
+            <h5>Mostly JS</h5>
+            <p class="eng">Learning more JS.</p>
+            <p class="esp">Aprendiendo JS.</p>
             <div class="arrow">&#10095;</div>
           </div>
         </a>
