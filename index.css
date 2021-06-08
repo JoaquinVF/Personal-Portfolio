@@ -145,7 +145,7 @@ h1{
   box-shadow:  1px 1px 2px 1.5px rgb(0 0 0 / 45%);
   background-color: #ffffff;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .order:active{
   box-shadow:  1px 1px 2px 1px rgb(0 0 0 / 35%) inset;
@@ -294,6 +294,7 @@ footer{
   .projects-title__inner-container{
     width: 20%;
     justify-content: space-evenly;
+    flex-direction: column;
   }
   .projects-container{
     width: 100%;
