@@ -172,7 +172,7 @@ h1{
 }
 .projects-container .projects-box{
   width: 280px;
-  min-height: 268px;
+  min-height: 290px;
   border-radius: 8px;
   flex-direction: column;
   display: flex;
@@ -266,7 +266,7 @@ footer{
   }
   .container .sub{
     margin: auto;
-    width: 120px;
+    width: 110px;
   }
   .language{
     width: 99vw;

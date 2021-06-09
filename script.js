@@ -2,7 +2,8 @@ const textoEspañol = document.getElementsByClassName('esp');
 const textoIngles = document.getElementsByClassName('eng');
 const selector = document.getElementById("selector");
 const container = document.getElementById("projects-container");
-let orderText = document.getElementById("orderText");
+const orderText = document.getElementById('orderText');
+const sub = document.getElementById('sub');
 let windowSize = window.matchMedia("(max-width: 768px)");
 
 
@@ -21,19 +22,15 @@ function langEn(){
 function changeMovileOrder(){
     if (container.style.flexDirection === "column-reverse"){
         container.style.flexDirection = "column";
-        orderText.textContent = "Filter: A - Z";
     } else {
         container.style.flexDirection = "column-reverse"
-        orderText.textContent = "Filter: Z - A";
     }
 }
 function changeDesktopOrder(){
     if (container.style.flexDirection === "row-reverse"){
         container.style.flexDirection = "row";
-        orderText.textContent = "Filter: A - Z";
     } else {
         container.style.flexDirection = "row-reverse"
-        orderText.textContent = "Filter: Z - A";
     }
 }
 function myFunction(windowSize) {
@@ -55,8 +52,10 @@ function myFunction(windowSize) {
 selector.addEventListener('change', e => {
     if (e.target.value === "value2"){
         langEs()
+        sub.style.width = "140px"
     } else {
         langEn()
+        sub.style.width = "110px"
     }
 })
 
